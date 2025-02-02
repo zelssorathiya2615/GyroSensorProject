@@ -20,7 +20,7 @@
     <button onclick="requestPermission()">Enable Sensors</button>
 
     <script>
-        let socket = new WebSocket("ws://localhost:8080"); // Replace with actual server IP if needed
+        let socket = new WebSocket("ws://192.168.126.81/ws"); // Replace with actual server IP if needed
 
         socket.onopen = () => document.getElementById("status").innerText = "Connected";
         socket.onclose = () => document.getElementById("status").innerText = "Disconnected";
